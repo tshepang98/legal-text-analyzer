@@ -1,37 +1,37 @@
 ⚖️ Legal Text Analyzer
 Overview
 
-Legal Text Analyzer is a Python-based prototype designed to assist legal professionals in:
+Legal Text Analyzer is a Python-based tool designed to help legal professionals:
 
-Summarizing complex legal documents
+Summarize complex legal documents
 
-Extracting key legal entities
+Extract key legal entities
 
-Analyzing tone and sentiment
+Analyze tone and sentiment
 
-Its modular pipeline supports rapid review of single paragraphs, files, or entire folders of legal documents.
+It supports single paragraphs, individual files, or entire folders of documents, making review fast and efficient.
 
 Features
 
-Text Summarization: Condenses paragraphs into concise summaries using advanced transformer models.
+Text Summarization: Condenses legal paragraphs into concise, readable summaries using advanced transformer models.
 
-Named Entity Recognition (NER): Identifies organizations, laws, dates, persons, and monetary values.
+Named Entity Recognition (NER): Detects organizations, laws, dates, people, and monetary values.
 
-Tone & Sentiment Analysis: Measures polarity and subjectivity for quick sentiment evaluation.
+Tone & Sentiment Analysis: Provides polarity and subjectivity scores for document sentiment evaluation.
 
-Batch Processing: Supports both individual files and folders for large-scale document review.
+Batch Processing: Handles both individual files and folders for large-scale processing.
 
 Technical Approach
 
-Summarization: sshleifer/distilbart-cnn-6-6 for a balance of speed and accuracy.
+Summarization: Uses sshleifer/distilbart-cnn-6-6 for a balance of speed and quality.
 
-NER: spaCy en_core_web_sm for detecting organizations, laws, dates, and people.
+NER: Uses spaCy en_core_web_sm for identifying organizations, laws, dates, and people.
 
-Sentiment Analysis: TextBlob for lightweight polarity and subjectivity analysis.
+Sentiment Analysis: Uses TextBlob for lightweight polarity and subjectivity scoring.
 
-Architecture: Modular sequential pipeline for easy testing and future upgrades.
+Architecture: Modular sequential pipeline allows easy testing and future upgrades.
 
-CLI User Experience: Flexible input options for text, single files, or batch folders.
+CLI User Experience: Flexible input options for text, single files, or folders.
 
 Installation
 
@@ -44,12 +44,12 @@ source legal_analyzer/bin/activate
 legal_analyzer\Scripts\activate
 
 
-Install dependencies:
+Install required Python libraries:
 
 pip install -r requirements.txt
 
 
-Download spaCy language model:
+Download the spaCy language model:
 
 python -m spacy download en_core_web_sm
 
@@ -99,7 +99,7 @@ Libraries & Models
 
 Transformers (Hugging Face): sshleifer/distilbart-cnn-6-6
 
-spaCy: NER with en_core_web_sm
+spaCy: Named Entity Recognition (en_core_web_sm)
 
 TextBlob: Polarity and subjectivity analysis
 
@@ -111,19 +111,19 @@ Limitations & Future Enhancements
 
 Current Limitations:
 
-Optimized for short-to-medium paragraphs; long documents need chunking
+Optimized for short-to-medium paragraphs; long documents require chunking
 
 General-purpose NER may miss legal-specific entities
 
 AI-generated summaries should be reviewed for accuracy
 
-Initial model loading can be resource-intensive
+Initial model loading is resource-intensive
 
 Future Enhancements:
 
-Legal-specific NER models
+Integrate legal-specific NER models
 
-Citation extraction & clause classification
+Add citation extraction & clause classification
 
 Plain-language conversion for non-specialists
 
