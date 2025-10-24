@@ -1,37 +1,82 @@
+Conversation opened. 2 messages. All messages read.
+
+Skip to content
+Using Gmail with screen readers
+in:sent 
+
+AI Analyst Assessment
+Inbox
+
+Lufhugo, Mulalo (LNG-CON)
+9:58 AM (3 hours ago)
+Dear Tshepang, You have been invited to complete an Assessment for the AI Analyst role; you have 3 hours to complete this task and send it back. Please read the
+
+TSHEPANG MATHLORE <tshepangmathlore@gmail.com>
+Attachments
+12:46 PM (24 minutes ago)
+to Mulalo
+
+Hi Mulalo,
+
+I hope you are doing well.
+
+I wanted to share my Legal Text Analyzer project with you. You can find the code here:
+https://github.com/tshepang98/legal-text-analyzer/blob/main/main.py
+
+In addition to the code, I have attached the following to this email:
+
+README.md with installation, usage, and technical details
+
+Sample input file (sample.txt)
+
+Screenshots showing example outputs
+
+Requirements as well
+
+Please feel free to review it at your convenience. I’m happy to provide any additional explanations or demonstrations if needed.
+
+Thank you for your time and consideration.
+
+
+Best regards,
+Tshepang Mathlore
+
+ 5 Attachments
+  •  Scanned by Gmail
 ⚖️ Legal Text Analyzer
 Overview
 
-Legal Text Analyzer is a Python-based tool designed to help legal professionals:
+Legal Text Analyzer is a Python-based prototype designed to assist legal professionals in:
 
-Summarize complex legal documents
+Summarizing complex legal documents
 
-Extract key legal entities
+Extracting key legal entities
 
-Analyze tone and sentiment
+Analyzing tone and sentiment
 
-It supports single paragraphs, individual files, or entire folders of documents, making review fast and efficient.
+Its modular pipeline supports rapid review of single paragraphs, files, or entire folders of legal documents.
 
 Features
 
-Text Summarization: Condenses legal paragraphs into concise, readable summaries using advanced transformer models.
+Text Summarization: Condenses paragraphs into concise summaries using advanced transformer models.
 
-Named Entity Recognition (NER): Detects organizations, laws, dates, people, and monetary values.
+Named Entity Recognition (NER): Identifies organizations, laws, dates, persons, and monetary values.
 
-Tone & Sentiment Analysis: Provides polarity and subjectivity scores for document sentiment evaluation.
+Tone & Sentiment Analysis: Measures polarity and subjectivity for quick sentiment evaluation.
 
-Batch Processing: Handles both individual files and folders for large-scale processing.
+Batch Processing: Supports both individual files and folders for large-scale document review.
 
 Technical Approach
 
-Summarization: Uses sshleifer/distilbart-cnn-6-6 for a balance of speed and quality.
+Summarization: sshleifer/distilbart-cnn-6-6 for a balance of speed and accuracy.
 
-NER: Uses spaCy en_core_web_sm for identifying organizations, laws, dates, and people.
+NER: spaCy en_core_web_sm for detecting organizations, laws, dates, and people.
 
-Sentiment Analysis: Uses TextBlob for lightweight polarity and subjectivity scoring.
+Sentiment Analysis: TextBlob for lightweight polarity and subjectivity analysis.
 
-Architecture: Modular sequential pipeline allows easy testing and future upgrades.
+Architecture: Modular sequential pipeline for easy testing and future upgrades.
 
-CLI User Experience: Flexible input options for text, single files, or folders.
+CLI User Experience: Flexible input options for text, single files, or batch folders.
 
 Installation
 
@@ -44,12 +89,12 @@ source legal_analyzer/bin/activate
 legal_analyzer\Scripts\activate
 
 
-Install required Python libraries:
+Install dependencies:
 
 pip install -r requirements.txt
 
 
-Download the spaCy language model:
+Download spaCy language model:
 
 python -m spacy download en_core_web_sm
 
@@ -99,7 +144,7 @@ Libraries & Models
 
 Transformers (Hugging Face): sshleifer/distilbart-cnn-6-6
 
-spaCy: Named Entity Recognition (en_core_web_sm)
+spaCy: NER with en_core_web_sm
 
 TextBlob: Polarity and subjectivity analysis
 
@@ -111,19 +156,19 @@ Limitations & Future Enhancements
 
 Current Limitations:
 
-Optimized for short-to-medium paragraphs; long documents require chunking
+Optimized for short-to-medium paragraphs; long documents need chunking
 
 General-purpose NER may miss legal-specific entities
 
 AI-generated summaries should be reviewed for accuracy
 
-Initial model loading is resource-intensive
+Initial model loading can be resource-intensive
 
 Future Enhancements:
 
-Integrate legal-specific NER models
+Legal-specific NER models
 
-Add citation extraction & clause classification
+Citation extraction & clause classification
 
 Plain-language conversion for non-specialists
 
@@ -134,3 +179,5 @@ Export results in structured formats (JSON, CSV)
 Author
 
 Tshepang Mathlore
+README.md
+Displaying README.md.
