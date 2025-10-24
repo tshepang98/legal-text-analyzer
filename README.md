@@ -1,52 +1,7 @@
-Conversation opened. 2 messages. All messages read.
-
-Skip to content
-Using Gmail with screen readers
-in:sent 
-
-AI Analyst Assessment
-Inbox
-
-Lufhugo, Mulalo (LNG-CON)
-9:58 AM (3 hours ago)
-Dear Tshepang, You have been invited to complete an Assessment for the AI Analyst role; you have 3 hours to complete this task and send it back. Please read the
-
-TSHEPANG MATHLORE <tshepangmathlore@gmail.com>
-Attachments
-12:46 PM (24 minutes ago)
-to Mulalo
-
-Hi Mulalo,
-
-I hope you are doing well.
-
-I wanted to share my Legal Text Analyzer project with you. You can find the code here:
-https://github.com/tshepang98/legal-text-analyzer/blob/main/main.py
-
-In addition to the code, I have attached the following to this email:
-
-README.md with installation, usage, and technical details
-
-Sample input file (sample.txt)
-
-Screenshots showing example outputs
-
-Requirements as well
-
-Please feel free to review it at your convenience. I’m happy to provide any additional explanations or demonstrations if needed.
-
-Thank you for your time and consideration.
-
-
-Best regards,
-Tshepang Mathlore
-
- 5 Attachments
-  •  Scanned by Gmail
 ⚖️ Legal Text Analyzer
 Overview
 
-Legal Text Analyzer is a Python-based prototype designed to assist legal professionals in:
+Legal Text Analyzer is a Python-based prototype designed to assist legal professionals in  d:
 
 Summarizing complex legal documents
 
@@ -179,5 +134,3 @@ Export results in structured formats (JSON, CSV)
 Author
 
 Tshepang Mathlore
-README.md
-Displaying README.md.
